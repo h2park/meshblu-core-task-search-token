@@ -6,7 +6,7 @@ branches:
   - "/^v[0-9]/"
 addons:
   code_climate:
-    repo_token: <REPO TOKEN GOES HERE>
+    repo_token: b051feb250a1eb39be3a6f4330e84bf163077105d79ea1613e007ec610d69c5c
 before_script:
 - npm install -g codeclimate-test-reporter
 after_script:
