@@ -1,0 +1,43 @@
+{
+  "name": "meshblu-core-task-search-token",
+  "version": "1.0.0",
+  "description": "Search for tokens, using the unstoppable Meshblu CORE",
+  "main": "index.js",
+  "scripts": {
+    "test": "istanbul cover _mocha -- -R spec --require coffee-coverage/register-istanbul"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/octoblu/meshblu-core-task-search-token.git"
+  },
+  "keywords": [
+    "meshblu",
+    "IoT",
+    "octoblu"
+  ],
+  "author": "serveradmin@octoblu.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/octoblu/meshblu-core-task-search-token/issues"
+  },
+  "homepage": "https://github.com/octoblu/meshblu-core-task-search-token#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-subset": "^1.2.0",
+    "coffee-coverage": "^1.0.1",
+    "coffee-script": "^1.10.0",
+    "istanbul": "^0.4.5",
+    "meshblu-core-datastore": "^4.0.0",
+    "mocha": "^2.5.3",
+    "mocha-istanbul": "^0.2.0",
+    "moment": "^2.10.6",
+    "mongojs": "^2.2.2",
+    "sinon": "^1.17.5",
+    "sinon-chai": "^2.8.0"
+  },
+  "dependencies": {
+    "coffee-script": "^1.10.0",
+    "lodash": "^4.15.0",
+    "meshblu-core-manager-token": "^7.5.0"
+  }
+}
