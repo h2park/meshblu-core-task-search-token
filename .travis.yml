@@ -4,9 +4,18 @@ node_js:
 branches:
   only:
   - "/^v[0-9]/"
+services:
+- mongodb
+env:
+- CXX=g++-4.8
 addons:
-  code_climate:
-    repo_token: b051feb250a1eb39be3a6f4330e84bf163077105d79ea1613e007ec610d69c5c
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - g++-4.8
+    code_climate:
+      repo_token: b051feb250a1eb39be3a6f4330e84bf163077105d79ea1613e007ec610d69c5c
 before_script:
 - npm install -g codeclimate-test-reporter
 after_script:
